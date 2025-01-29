@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
     <title>Kids School - DaisyUI</title>
+    <!-- box icon  -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -88,10 +90,10 @@
     </header>
     <main>
         <!-- curriculum section  -->
-        <section class="py-16 mb-24 bg-[url(./assets/bg.png)]">
+        <section class="py-16 mb-24 bg-[url(./assets/bg.png)] border-b-4 border-dashed">
             <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-20">Standard Curriculum</h1>
             <!-- container  -->
-            <div class="max-w-6xl mx-auto px-4  grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+            <div class="max-w-6xl mx-auto px-4  grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                 <!-- card  -->
                 <div class="card bg-gradient-to-t from-white to-[#e2f5fe] card-compact py-9 shadow-md">
                     <figure>
@@ -103,7 +105,7 @@
                             dis parturient montes, nascetur ridiculus
                             mu sdis parturient</p>
                         <div class="card-actions mx-auto">
-                           <a href="#" class="text-info font-semibold">Read More</a>
+                            <a href="#" class="text-info font-semibold">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -118,7 +120,7 @@
                             dis parturient montes, nascetur ridiculus
                             mu sdis parturient</p>
                         <div class="card-actions mx-auto">
-                           <a href="#" class="text-warning font-semibold">Read More</a>
+                            <a href="#" class="text-warning font-semibold">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -133,11 +135,16 @@
                             dis parturient montes, nascetur ridiculus
                             mu sdis parturient</p>
                         <div class="card-actions mx-auto">
-                           <a href="#" class="text-purple-600 font-semibold">Read More</a>
+                            <a href="#" class="text-purple-600 font-semibold">Read More</a>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- icon  -->
+             <div class="flex gap-1 mt-20 justify-center">
+                <div class="w-12 h-12 bg-[#FEA301] hover:bg-[#e29d25] flex justify-center items-center rounded-full"><i class='bx bx-chevron-left text-4xl text-white cursor-pointer '></i></div>
+                <div class="w-12 h-12 bg-[#FEA301] hover:bg-[#e29d25] flex justify-center items-center rounded-full"><i class='bx bx-chevron-right text-4xl text-white cursor-pointer '></i></div>
+             </div>
         </section>
     </main>
 </body>
