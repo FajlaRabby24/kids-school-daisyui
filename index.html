@@ -43,14 +43,15 @@
                                     d="M4 6h16M4 12h8m-8 6h16" />
                             </svg>
                         </div>
-                        <ul tabindex="0" class="menu menu-sm dropdown-content rounded-box z-[1] mt-3 w-52 p-2 shadow bg-white">
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content rounded-box z-[1] mt-3 w-52 p-2 shadow bg-white">
                             <li><a class="text-warning font-bold">Home</a></li>
                             <li><a class="text-primary font-bold">About</a></li>
                             <li><a class="text-info font-bold">Facilties</a></li>
                             <li><a class="text-success font-bold">Admission</a></li>
                         </ul>
                     </div>
-                    <a class="btn btn-ghost text-xl px-0"><img class="h-11" src="./assets/logo.png" alt=""><span 
+                    <a class="btn btn-ghost text-xl px-0"><img class="h-11" src="./assets/logo.png" alt=""><span
                             class="font-bold hidden md:block">SCHOOL</span></a>
                 </div>
                 <div class="navbar-center hidden  md:flex">
@@ -70,20 +71,75 @@
         <!-- banner -->
         <div class="hero bg-[#f7f7f7] md:pt-16">
             <div class="hero-content py-0 flex-col md:flex-row-reverse items-center md:gap-4 lg:gap-9">
-              <img
-                src="./assets/hero-kids.png"
-                class="md:w-2/5 " />
+                <img src="./assets/hero-kids.png" class="md:w-2/5 " />
                 <!-- text content  -->
-              <div class="text-center md:text-left lg:w-1/2">
-                <h1 class=" text-3xl  lg:text-5xl font-bold"><span class="text-warning inline-block lg:mb-3">Empowering</span> <br>
-                    students from small age <br> <span class="text-info inline-block lg:mt-3">towards vision</span></h1>
-                <p class="py-6">With the courage, Confidence, Creativity and Compassion to make their Unique Contribution in a Diverse and Dynamic World.
-                </p>
-                <button class="btn btn-neutral font-bold">Enroll Now</button>
-              </div>
+                <div class="text-center md:text-left lg:w-1/2">
+                    <h1 class=" text-3xl  lg:text-5xl font-bold"><span
+                            class="text-warning inline-block lg:mb-3">Empowering</span> <br>
+                        students from small age <br> <span class="text-info inline-block lg:mt-3">towards vision</span>
+                    </h1>
+                    <p class="py-6">With the courage, Confidence, Creativity and Compassion to make their Unique
+                        Contribution in a Diverse and Dynamic World.
+                    </p>
+                    <button class="btn btn-neutral font-bold">Enroll Now</button>
+                </div>
             </div>
-          </div>
+        </div>
     </header>
+    <main>
+        <!-- curriculum section  -->
+        <section class="py-16 mb-24 bg-[url(./assets/bg.png)]">
+            <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-20">Standard Curriculum</h1>
+            <!-- container  -->
+            <div class="px-4 grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                <!-- card  -->
+                <div class="card bg-gradient-to-t from-white to-[#e2f5fe] card-compact py-9 shadow-md">
+                    <figure>
+                        <img src="./assets/kinder.png" alt="Shoes" />
+                    </figure>
+                    <div class="card-body text-center">
+                        <h2 class=" text-center text-2xl font-bold">Kinder (3-6) Years</h2>
+                        <p class="font-medium mb-5">Cum sociis natoque penatibus et magnis
+                            dis parturient montes, nascetur ridiculus
+                            mu sdis parturient</p>
+                        <div class="card-actions mx-auto">
+                           <a href="#" class="text-info font-semibold">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- card  -->
+                <div class="card bg-gradient-to-t from-white to-[#fff6e3] card-compact py-9 shadow-md">
+                    <figure>
+                        <img src="./assets/elementary.png" alt="Shoes" />
+                    </figure>
+                    <div class="card-body text-center">
+                        <h2 class=" text-center text-2xl font-bold">Elementary School</h2>
+                        <p class="font-medium mb-5">Cum sociis natoque penatibus et magnis
+                            dis parturient montes, nascetur ridiculus
+                            mu sdis parturient</p>
+                        <div class="card-actions mx-auto">
+                           <a href="#" class="text-warning font-semibold">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- card  -->
+                <div class="card bg-gradient-to-t from-white to-[#f1e7ff] card-compact py-9 shadow-md">
+                    <figure>
+                        <img src="./assets/kinder.png" alt="Shoes" />
+                    </figure>
+                    <div class="card-body text-center">
+                        <h2 class=" text-center text-2xl font-bold">Middle (10-16) Years</h2>
+                        <p class="font-medium mb-5">Cum sociis natoque penatibus et magnis
+                            dis parturient montes, nascetur ridiculus
+                            mu sdis parturient</p>
+                        <div class="card-actions mx-auto">
+                           <a href="#" class="text-purple-600 font-semibold">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
