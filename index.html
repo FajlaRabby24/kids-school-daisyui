@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,20 +15,75 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }, 
-              fontFamily: {
-                'quicksand': ["Quicksand", "serif"]
-              }
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    },
+                    fontFamily: {
+                        'quicksand': ["Quicksand", "serif"]
+                    }
+                }
             }
-          }
         }
-      </script>
+    </script>
 </head>
-<body>
-    
+
+<body class="font-quicksand">
+    <header class="border-b-4 border-dashed pb-3 md:pb-0">
+        <!-- navbar ?= -->
+        <nav class="max-w-6xl mx-auto border-b-2 border-orange-300 md:border-0">
+            <div class="navbar  ">
+                <div class="navbar-start">
+                    <div class="dropdown ">
+                        <div tabindex="0" role="button" class="btn btn-ghost  md:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 " fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0" class="menu menu-sm dropdown-content rounded-box z-[1] mt-3 w-52 p-2 shadow bg-white">
+                            <li><a class="text-warning font-bold">Home</a></li>
+                            <li><a class="text-primary font-bold">About</a></li>
+                            <li><a class="text-info font-bold">Facilties</a></li>
+                            <li><a class="text-success font-bold">Admission</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost text-xl px-0"><img class="h-11" src="./assets/logo.png" alt=""><span 
+                            class="font-bold hidden md:block">SCHOOL</span></a>
+                </div>
+                <div class="navbar-center hidden  md:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a class="text-lg text-warning font-semibold">Home</a></li>
+                        <li><a class="text-lg text-primary font-semibold">About</a></li>
+                        <li><a class="text-lg text-info font-semibold">Facilties</a></li>
+                        <li><a class="text-lg text-success font-semibold">Admission</a></li>
+
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a class="btn btn-warning text-white font-bold px-7  md:px-10">Button</a>
+                </div>
+            </div>
+        </nav>
+        <!-- banner -->
+        <div class="hero bg-[#f7f7f7] md:pt-16">
+            <div class="hero-content py-0 flex-col md:flex-row-reverse items-center md:gap-4 lg:gap-9">
+              <img
+                src="./assets/hero-kids.png"
+                class="md:w-2/5 " />
+                <!-- text content  -->
+              <div class="text-center md:text-left lg:w-1/2">
+                <h1 class=" text-3xl  lg:text-5xl font-bold"><span class="text-warning inline-block lg:mb-3">Empowering</span> <br>
+                    students from small age <br> <span class="text-info inline-block lg:mt-3">towards vision</span></h1>
+                <p class="py-6">With the courage, Confidence, Creativity and Compassion to make their Unique Contribution in a Diverse and Dynamic World.
+                </p>
+                <button class="btn btn-neutral font-bold">Enroll Now</button>
+              </div>
+            </div>
+          </div>
+    </header>
 </body>
+
 </html>
